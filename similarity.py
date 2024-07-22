@@ -67,6 +67,7 @@ if __name__ == "__main__":
 
     ground_truth_group.add_argument(
         "--ground-truth-input", 
+        "-gti",
         choices=ground_truth_inputs, 
         default="file", 
         nargs='?',
@@ -77,6 +78,7 @@ if __name__ == "__main__":
 
     llm_output_group.add_argument(
         "--llm-input", 
+        "-li",
         choices=llm_output_inputs, 
         default="file", 
         nargs='?',

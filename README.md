@@ -33,9 +33,9 @@ optional arguments:
                         File name for LLM input. Only required if file input type is selected.
   --llm-output-prompt LLM_OUTPUT_PROMPT, -ltp LLM_OUTPUT_PROMPT
                         Prompt for LLM input. Only required if GPT input type is selected.
-  --ground-truth-input [{stdin,file}]
+  --ground-truth-input [{stdin,file}], -gti [{stdin,file}]
                         Choice of input for ground truth.
-  --llm-input [{stdin,file,gpt}]
+  --llm-input [{stdin,file,gpt}], -li [{stdin,file,gpt}]
                         Choice of input for LLM output.
 ```
 
