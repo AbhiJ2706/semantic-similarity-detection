@@ -1,6 +1,6 @@
 # Semantic Similarity Checker
 
-Determines the semantic similarity between a ground truth input and an output from an LLM. The semantic similarity is a measure of how well the meanings of two texts match. When comparing a ground truth text and the output of an LLM, the semantic similarity can provide an indication of how truthful an LLM's output is. By measuring this, we can measure how well the LLM can understand user prompts and how accurate its responses are. This allows us limit LLM hallucinations and inprove the LLM's ability to serve users.
+Determines the semantic similarity between a ground truth input and an output from an LLM. The semantic similarity is a measure of how well the meanings of two texts match. When comparing a ground truth text and the output of an LLM, the semantic similarity can provide an indication of how truthful an LLM's output is. By measuring this, we can determine how well the LLM can understand user prompts and how accurate its responses are. This allows us limit LLM hallucinations and inprove the LLM's ability to serve users.
 
 ## Usage:
 
