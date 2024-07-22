@@ -1,4 +1,4 @@
-### Semantic Similarity Checker
+# Semantic Similarity Checker
 
 Determines the semantic similarity between a ground truth input and an output from an LLM. 
 
