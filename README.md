@@ -1,12 +1,16 @@
 # Semantic Similarity Checker
 
-Determines the semantic similarity between a ground truth input and an output from an LLM. 
+Determines the semantic similarity between a ground truth input and an output from an LLM. The semantic similarity is a measure of how well the meanings of two texts match. When comparing a ground truth text and the output of an LLM, the semantic similarity can provide an indication of how truthful an LLM's output is. By measuring this, we can measure how well the LLM can understand user prompts and how accurate its responses are. This allows us limit LLM hallucinations and inprove the LLM's ability to serve users.
+
+## Usage:
+
+The user must supply the ground truth input, and the output from an LLM. This is done throught the command line.
 
 The ground truth input can be supplied by file or through standard input.
 
 The LLM output can be supplied by file, standard input, or through the OpenAI API which calls on ChatGPT with a user-supplied prompt.
 
-### Usage:
+### Command:
 
 ```                        
 $ python similarity.py
@@ -15,7 +19,15 @@ usage: SimilarityChecker [-h] [--ground-truth-filename GROUND_TRUTH_FILENAME] [-
                          [--llm-output-prompt LLM_OUTPUT_PROMPT] --ground-truth-input [{stdin,file}]) (--llm-input [{stdin,file,gpt}]
 ```
 
-### Documentation:
+### Example:
+
+```
+$ python similarity.py --ground-truth-input file --ground-truth-filename input/ground_truth.txt --llm-input file --llm-output-filename input/llm_output.txt
+Semantic relationship is neutral [=0.7144]
+$
+```
+
+## Documentation:
 
 ```
 python similarity.py -h

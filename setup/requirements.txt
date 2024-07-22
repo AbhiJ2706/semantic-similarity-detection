@@ -1,0 +1,5 @@
+sentence-transformers
+openai
+numpy
+torch
+transformers==4.37.2
